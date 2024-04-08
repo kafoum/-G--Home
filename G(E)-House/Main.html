@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G(E)-House</title>
+    <link rel="stylesheet" href="C:\Users\angea\OneDrive\Documents\VS code\G(E)-House\house.CSS">
+	
+    <link rel="icon" type="image/x-icon" href="C:/Users/angea/OneDrive/Document/VS code/G(E)-House/favicon_io/favicon.ico">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+        <div class="trapezoide">  
+            <a href="#">Accueil</a>
+            <div class="subnav">
+                <button class="subnavbtn">Type de biens<i class="fa fa-caret-down"></i></button>
+                <div class="subnav-content">
+                    <div id="subnav-trapezoid">
+                    <a href="#type de biens">Maison</a>
+                    <a href="#type de biens">Appartement</a>
+                </div>
+            </div>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn">Services<i class="fa fa-caret-down"></i></button>
+              <div class="subnav-content">
+               <div class="subnav-trapezoid">
+                 <a href="#Services">Vente</a>
+                 <a href="#Services">location</a>
+                 <a href="#Services">Estimation</a>
+                </div>
+              </div>
+             </div>
+            <a href="#">A propos</a>
+            <a href="#">Contact</a>
+            <a href="#">Espace clients</a>
+        </div>
+    </nav>
+   </header>
+   
+   <section class="slider">
+    <div class="slide">
+        <img src="C:/Users/angea/OneDrive/Documents/VS code/G(E)-House/images/télécharger.jpg" alt="Propriété vedette 1">
+        <div class="slide-caption">
+            <h2>Propriété vedette 1</h2>
+            <p>Description de la propriété vedette 1.</p>
+            <a href="#">En savoir plus</a>
+        </div>
+    </div>
+    <div class="slide">
+        <img src="C:/Users/angea/OneDrive/Documents/VS code/G(E)-House/images/Rechercher un bien.jpg" alt="Propriété vedette 2">
+        <div class="slide-caption">
+            <h2>Propriété vedette 2</h2>
+            <p>Description de la propriété vedette 2.</p>
+            <a href="#">En savoir plus</a>
+        </div>
+    </div>
+   
+</section>
+
+<section class="quick-search">
+    <h2>Filtre</h2>
+    <form action="page-de-recherche-avancee.html" method="GET">
+        <div>
+            <input type="radio" id="acheter" name="transaction" value="achat" checked>
+            <label for="acheter">Acheter</label>
+            <input type="radio" id="louer" name="transaction" value="location">
+            <label for="louer">Louer</label>
+        </div>
+        <div>
+            <label for="prix">Prix maximum :</label>
+            <input type="number" id="prix" name="prix" placeholder="Prix maximum en euros">
+        </div>
+        <div>
+            <label for="type">Type de propriété :</label>
+            <select id="type" name="type">
+                <option value="">-- Sélectionner --</option>
+                <option value="maison">Maison</option>
+                <option value="appartement">Appartement</option>
+            </select>
+        </div>
+        <div>
+            <label for="emplacement">Emplacement :</label>
+            <input type="text" id="emplacement" name="emplacement" placeholder="Ville, quartier, etc.">
+        </div>
+        <button type="submit">Rechercher</button>
+    </form>
+</section>
+
+
+
+</body>
